@@ -10,8 +10,8 @@ IEEE Trans. on Pattern Analysis and Machine Intelligence 32(1), 45-55.
 """
 import numpy as np
 import logging
-from .kmeans import Kmeans
-from .base import MatrixFactBase
+from matrix_fact.kmeans import Kmeans
+from matrix_fact.base import MatrixFactBase
 
 __all__ = ["CNMF"]
 
