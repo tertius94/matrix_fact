@@ -7,7 +7,7 @@ import numpy as np
 import random
 
 import matrix_fact.dist
-from .base import MatrixFactBase
+from matrix_fact.base import MatrixFactBase
 
 __all__ = ["Kmeans"]
 
@@ -69,7 +69,7 @@ class Kmeans(MatrixFactBase):
         
     def _update_h(self):                    
         # and assign samples to the best matching centers
-        self.assigned = dist.vq(self.W, self.data)
+        self.assigned = matrix_fact.dist.vq(self.W, self.data)
         self.H = np.zeros(self.H.shape)
         self.H[self.assigned, range(self._num_samples)] = 1.0
                 
