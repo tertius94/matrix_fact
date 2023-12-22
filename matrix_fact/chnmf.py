@@ -12,9 +12,9 @@ Factorization in the Wild. ICDM 2009.
 import numpy as np
 
 from itertools import combinations
-from .dist import vq
-from .pca import PCA
-from .aa import AA
+from matrix_fact.dist import vq
+from matrix_fact.pca import PCA
+from matrix_fact.aa import AA
 
 __all__ = ["CHNMF"]
 
