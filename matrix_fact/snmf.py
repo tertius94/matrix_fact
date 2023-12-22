@@ -9,7 +9,7 @@ MatrixFact Semi Non-negative Matrix Factorization.
 IEEE Trans. on Pattern Analysis and Machine Intelligence 32(1), 45-55. 
 """
 import numpy as np
-from .base import MatrixFactBase
+from matrix_fact.base import MatrixFactBase
 
 __all__ = ["SNMF"]
 
